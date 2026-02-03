@@ -17,19 +17,19 @@ Example question:
 
 ## How the Agent Works
 
-User Question
-      ↓
-LLM plans tool usage
-      ↓
-SQL Tool executes
-      ↓
-LLM reasons over SQL result
-      ↓
-Pandas Tool executes
-      ↓
-LLM synthesizes final analytical answer
+User Question 
+      ->
+LLM plans tool usage 
+      ->
+SQL Tool executes 
+      ->
+LLM reasons over SQL result 
+      ->
+Pandas Tool executes 
+      ->
+LLM synthesizes final analytical answer 
 
-You can see this full trace live in the terminal logs.
+Full trace can be seen in the terminal logs (img1-img4).
 
 ---
 
@@ -73,9 +73,7 @@ curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -d "{
 
 ---
 
-## What You Will See
-
-You will see:
+## Expected Agentic AI reasoning trace
 
 Thought → SQL Tool  
 Observation → SQL results  
@@ -83,8 +81,6 @@ Thought → Pandas Tool
 Observation → Trend analysis  
 Final Answer
 
-This is real Agentic AI behavior.
 
 ---
 
-Author: Richa Verma
